@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+ <script>
+     
+
+ $(document).ready(function(){
+  $("#hidden-div").hide();
+    $("#moreInput").click(function(){
+      var a = document.getElementById("choiceA").value;
+      var b = document.getElementById("choiceB").value;
+      var c = document.getElementById("choiceC").value;
+      var d = document.getElementById("choiceD").value;
+      if ((a==3)&&(b==1)&&(c==2)&&(d==4)){
+        alert("Hey this is right")
+      }
+      else{
+        alert("Hey this is NOT right")
+      }
+    });
+  });
+
+
+</script>
+</head>
+
+
+
+<body>
+
+
+<!-- Start of first page -->
+<div data-role="page" id="home">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+<div class="topsmall">
+    <b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Choose Your Own Space Adventure! </b>
+</div>
+
+<br><br>
+<center>
+<div class="bodytext" id="okay">
+    Before the launch sequence, there are many things you have to do.<br> Put the following four items in order.
+    </div>
+    <br><br>
+  <div class="bodytext choice">A) Inspect external tank for debris</div>
+   <input id="choiceA" type="number"><br>
+  <div class="bodytext choice">B) Check the backup flight systems</div>
+    <input id="choiceB" type="number"><br>
+   <div class="bodytext choice">C) Clean the crew module</div>
+     <input id="choiceC" type="number"><br>
+    <div class="bodytext choice">D) 
+Activate hydrogen burnoff system </div>
+<input id="choiceD" type="number"><br>
+   
+    <input type="submit" value="Enter" 
+         name="Submit" id="moreInput" onClick="doStuff()"/>
+
+</center>
+</div>
+
+<div data-role="page" id="s1wrong">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+<div class="topsmall">
+    <b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Choose Your Own Space Adventure! </b>
+</div>
+
+
+
+</center>
+<br>
+<a href="#home">Back</a>
+
+<a href="q1.html">
+<div id="true" class="tophead">
+Next
+</div></a>
+
+</div>
+</body>
+</html>

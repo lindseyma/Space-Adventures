@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script>
+     
+      function doStuff()
+      {
+
+      }
+
+ $(document).ready(function(){
+    $("#moreInput").click(function(){
+        $("#firstInput").hide();
+        $("#someDiv").show();
+        $("#someDiv h1").append( $("#someInput").val() );
+    });
+  });
+
+  $(function(){
+    $("#frm1_submitn").on('click',function() {
+        $(this).hide();
+        $("#hidden-div").show();
+    }); 
+  });
+  </script>
+
+</head>
+
+<body>
+<div data-role="page" id="s1right">
+
+
+<div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+<div class="topsmall">
+    <b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Choose Your Own Space Adventure! </b>
+</div>
+<br><br>
+
+  <div id="firstInput">
+    <input id="someInput" type="text"placeholder="What is your name?">
+    <input type="submit" value="Enter" 
+         name="Submit" id="moreInput" onClick="doStuff()"/>
+  </div>
+  <center>
+   <div id="someDiv" class="tophead" style="display:none;">
+      <h1>Welcome to Choose Your Own Apollo Mission Adventure, </h1>
+      <a href='q1.html'>Start</a>
+    </div>
+  </center>
+
+</div>
+</body>
+</html>

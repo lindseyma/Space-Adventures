@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<title>Choose Your Own Apollo Mission</title>
+	<head>
+		<link href="http://fonts.googleapis.com/css?family=Quicksand|Lobster|Crete+Round|Oswald|Slabo+27px|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	
+
+
+<script type = "text/javascript">
+	$(window).on("load",function() {
+    function fade(pageLoad) {
+        var min = 0.08;
+        var max = 1.0;
+        var threshold = 0.01;
+        $('.fade').each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+            
+            /* If the object is completely visible in the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css('opacity')<=min+threshold || pageLoad) {$(this).fadeTo(500,max);}
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css('opacity')>=max-threshold || pageLoad) {$(this).fadeTo(200,min);}
+            }
+        });
+    }
+    fade(true); //fade elements during page-load
+    $(window).scroll(function() {fade(false);}); //fade elements during scroll
+});
+</script>
+		  
+	</head>
+		<div class="s1True">
+	<div class="navbar">
+ 	<ul>
+ 		<li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+
+        <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+	</div>
+
+<div class="topsmall"><b> Choose Your Own Space Adventure! </b></div>
+
+<body>
+<div class="tophead"><center>
+<ul>                                                                                                                                                                                                                                                                                                               
+<li class="fade"><a href = “https://archive.org/details/NasaAudioHighlightReels”>https://archive.org/details/NasaAudioHighlightReels</a></li>
+<li class="fade"><a href = “http://www.nasa.gov/centers/johnson/pdf/606877main_FS-2011-11-057-JSC-astro_trng.pdf”>http://www.nasa.gov/centers/johnson/pdf/606877main_FS-2011-11-057-JSC-astro_trng.pdf</a> </li>
+<li class="fade"><a href = “http://history.nasa.gov/SP-4225/long-duration/long.htm”>http://history.nasa.gov/SP-4225/long-duration/long.htm</a></li>
+<li class="fade"><a href = “http://www.apollosaturn.com/ ”>http://www.apollosaturn.com/ </a></li>
+<li class="fade"><a href = “http://www.spaceline.org/rocketsum/saturn-Ib.html”>http://www.spaceline.org/rocketsum/saturn-Ib.html </a></li>
+<li class="fade"><a href = “http://www.hq.nasa.gov/alsj/a11/a11MIssionReport_1971015566.pdf”>http://www.hq.nasa.gov/alsj/a11/a11MIssionReport_1971015566.pdf </a></li>
+<li class="fade"><a href = “http://apollo11.spacelog.org/”>http://apollo11.spacelog.org/ </a></li>
+<li class="fade"><a href = “http://www.nasa.gov/mission_pages/shuttle/launch/countdown101.html”>http://www.nasa.gov/mission_pages/shuttle/launch/countdown101.html</li>
+<li class="fade"><a href = “http://www.nasa.gov/mission_pages/apollo/index.html”>http://www.nasa.gov/mission_pages/apollo/index.html </a></li>
+</ul>
+</center>
+</body>
+</div>
+</html>

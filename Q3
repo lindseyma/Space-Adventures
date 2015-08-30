@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose Your Own Space Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div data-role="page" id="home">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+<div class="topsmall">
+    <b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Choose Your Own Space Adventure! </b>
+</div>
+
+<br><br>
+<center>
+<div class="bodytext">
+     Congratulations! You have entered space, but your journey is far from over....
+    <br>Oh no! There is a fire in the command module, what do you want to do?
+    </div>
+    <br><br>
+  <div class="bodytext choice"><a href="#s1right">A) Open the cabin hatches.</a></div>
+  <br>
+  <div class="bodytext choice"><a href="#s1wrong">B) Increase oxygen levels.</a></div>
+   <br>
+   <div class="bodytext choice"><a href="#s1right">C) Too hot? Hot Damn! Got a police and fireman…</a></div>
+
+   </div>
+
+<div data-role="page" id="s1wrong">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+<div class="topsmall">
+    <b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Choose Your Own Space Adventure! </b>
+</div>
+
+<br><br>
+<center>
+<div class="bodytext">
+<b>WRONG!!</b>
+<br>
+The fire was caused by an excess of pure oxygen. Increasing oxygen levels would have caused an explosion. Yikes!
+</div>
+
+
+</center>
+</div>
+
+
+<div data-role="page" id="s1right">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+</center>
+<br><br>
+<center>
+<div class="bodytext">
+<b>RIGHT!!!</b>
+<br>
+Correct! After the devastating cabin fire of Apollo 1, NASA scientists revamped security protocols. In doing so, they expedited the time it took to open inward hatches - decreasing escape time. 
+
+<img src="s3.jpg">
+
+</div>
+<br>
+    <a href="Q3.html">Move on</a>
+</div>
+
+<div data-role="page" id="s1wrong">
+ 
+ <div class="navbar">
+  <ul>
+    <li class="navbar"> <a href="about.html"> Citations</a>
+        </li>
+        <li class="navbar"> <a href="game.html"> Play the Game!</a> 
+        </li>    
+    </ul>
+     <div class="navhome">
+                <a href="space.html"> Space Adventure </a>
+        </div>
+      </div>
+
+</center>
+<br><br>
+<center>
+<div class="bodytext">
+<b>WRONG!!!!</b>
+<br>
+GOT A DRAGON THAT WANT TO RETIRE, MAN...
+</div>
+<br>
+    <a href="Q3.html">Move on</a>
+</div>
+
+
+</center>
+</body>
+</html>
+
